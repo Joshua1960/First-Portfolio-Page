@@ -1,0 +1,138 @@
+.works
+{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 100vh;
+    margin-top: 1rem;
+}
+/* right side */
+.w-right
+{
+    position: relative;
+}
+.w-mainCircle
+{
+    position: relative;
+    left: -2rem;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+}
+.w-mainCircle>*
+{
+    position: absolute;
+}
+.w-mainCircle >:nth-child(1)
+{
+    top: -3rem;
+    left: 6rem;
+}
+.w-mainCircle>:nth-child(2) 
+{
+    left: -2rem;
+    top: 5rem;
+}
+.w-mainCircle>:nth-child(3) 
+{
+    left: 6rem;
+    top: 5rem;
+}
+.w-mainCircle>:nth-child(4) 
+{
+    left: 15rem;
+    top: 5rem;
+}
+.w-mainCircle>:nth-child(5) {
+    left: 6rem;
+    bottom: -3rem;
+}
+.w-secCircle
+{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    position: absolute;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    box-shadow: var(--smboxShadow);
+}
+.w-secCircle > img
+{
+    transform: scale(0.6);
+}
+.w-backCircle
+{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+}
+.blueCircle
+{
+    background: #194988;
+    left: 7rem;
+    top: 0rem;
+}
+.yellowCircle
+{
+    background: #F5C32C;
+    left: 7rem;
+    top: 10rem;
+}
+
+@media screen and (max-width:1023px) {
+    .works {
+        margin: -6rem -6rem 0 -6rem;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width:750px) {
+    .works {
+        margin: -8rem -12rem -2rem -12rem;
+        transform: scale(0.58);
+    }
+}
+
+@media screen and (max-width:610px) {
+    .works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        height: 100%;
+        transform: scale(0.7);
+        padding: -2rem;
+    }
+    .awesome {
+        place-items: center;
+        margin-bottom: 3rem;
+    }
+}
+@media screen and (max-width:415px) {
+    .works {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transform: scale(0.5);
+        padding: -2rem;
+        margin-bottom: -3rem;
+    }
+
+    .awesome {
+        place-items: center;
+        margin-bottom: 3rem;
+    }
+    .w-right {
+        transform: scale(0.7);
+        margin-bottom: 0;
+    }
+
+}

@@ -1,0 +1,137 @@
+.n-wrapper
+{
+    display: flex;
+    background-color: rgba(244, 240, 240, 0.2);
+    justify-content: space-between;
+    box-shadow: 0px 10px 10px -5px rgba(85, 119, 187, 0.42);
+    margin: 0;
+    padding: 5px 3rem;
+    /* width: 100%; */
+    z-index: 1000;
+}
+.n-name
+{
+    font-family: var(--fontused);
+}
+.n-left
+{
+    display: flex;
+    gap: 2rem;
+    place-items: center;
+}
+.n-right
+{
+    display: flex;
+    gap: 1.5rem;
+    place-items: center;
+}
+.n-list li
+{
+    font-family: var(--fontused);
+    font-size: 0.8rem;
+}
+.n-list li:hover
+{
+    transition: ease-out 0.51s;
+    cursor: pointer;
+    color: blue;
+}
+.n-list li:active 
+{
+    color: blue;
+}
+.n-list ul
+{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    place-items: center;
+}
+.openmenu
+{
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    margin-right: 20px;
+}
+.t-menu
+{
+    visibility: none;
+}
+
+
+
+
+
+@media screen and (max-width:1023px) {
+    .n-list ul,
+    .n-right
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 2;
+        padding: 10px;
+        margin: 0;
+        align-items: flex-end;
+        width: 5.8rem;
+
+    }
+    .n-right
+    {
+        background-color: rgba(226, 226, 226, 0.8);
+        position: relative;
+        top: 1.6rem;
+        right: 2vw;
+        gap: 0;
+        border-radius: 8% 0% 8% 8%;
+    }
+    .n-list li:hover 
+    {
+        transition: ease-out 0.4s;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .n-button
+    {
+        font-size: 14px;
+    }
+    .openmenu {
+        width: 25px;
+        height: 25px;
+        visibility: visible;
+        right: 10px;
+        position: absolute;
+    }
+    .n-desktopmenu
+    {
+        display: none;
+    }
+    .toggle-button
+    {
+        position: absolute;
+        right: 10px;
+        display: flex;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .n-left
+    {
+        gap: 1rem;
+        position: relative;
+    }
+    .n-name
+    {
+        font-size: 0.8rem;
+        margin-left: -40px;
+    }
+    .openmenu 
+    {
+        width: 20px;
+        height: 20px;
+        visibility: visible;
+        right: 10px;
+        position: absolute;
+    }
+}
